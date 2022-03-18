@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GNTRR's Web</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <ul>
+                <li><a href="#" class="active">Beranda</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="img/stars.png" id="stars" alt="">
+            <img src="img/moon.png" id="moon" alt="">
+            <img src="img/mountains_behind.png" id="mountains_behind" alt="">
+            <h2 id="text">Welcome</h2>
+            <a href="#sec" id="btn">Kepoin Yuk!</a>
+            <img src="img/mountains_front.png" id="mountains_front" alt="">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Tentang</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, voluptates officiis laudantium deserunt est provident fugiat explicabo pariatur blanditiis, optio atque, ea doloremque? Asperiores quisquam soluta libero nostrum consequuntur eligendi dicta ipsum sapiente nihil? Illo ipsa qui molestiae deserunt totam pariatur fugiat omnis vel, facere temporibus, suscipit labore vero perspiciatis sapiente animi autem sunt! Sed maiores dolor ducimus veritatis magni doloremque, suscipit possimus, dolores labore, corrupti id. Aliquam eveniet praesentium veniam ullam nisi magnam molestiae, obcaecati eum repudiandae consequatur officiis itaque tempore. Asperiores omnis eveniet illo quod culpa accusantium dolorem itaque dicta pariatur. Mollitia consectetur dicta velit est possimus labore, vel quidem. Commodi, earum! Reprehenderit itaque excepturi debitis incidunt blanditiis quos pariatur consequuntur deleniti, odit quisquam labore dolorum ut officia aliquid culpa maxime, velit eos, quas sit maiores delectus eveniet sed eum recusandae. Minima delectus nam error, culpa nesciunt animi vitae quasi cupiditate sit expedita aliquam. Cum fugit doloremque vel illo repellendus maxime pariatur at quo dolorum eum voluptates itaque similique iste placeat facere, animi officia distinctio minima molestiae numquam ipsa dicta iusto. Ullam earum eum consectetur qui consequatur minus, sapiente soluta beatae neque eos iure similique, maxime voluptate eligendi, perferendis voluptatem cumque porro! Labore dolores repellat quae. Rem recusandae dignissimos esse necessitatibus quo repellat quisquam labore, explicabo quidem nemo error impedit blanditiis nisi? Accusantium temporibus pariatur enim. Enim vero molestiae quia officiis, iure magni. Itaque illo nesciunt sunt? Odit officiis eius architecto autem repellat? Natus non earum possimus nulla, culpa quis consequatur saepe doloribus assumenda quam perferendis repellendus officiis.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta est omnis minima quod quo accusantium, dolorum aliquam veniam itaque molestiae reprehenderit ipsa exercitationem iusto. Sapiente, quos blanditiis. Veritatis, autem.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iusto placeat temporibus eveniet, quos perspiciatis commodi quia, ea, porro eum laudantium quaerat. Fugiat sapiente nam nobis delectus totam voluptatem ad eaque modi nesciunt dolore rem porro consequatur corporis facilis corrupti harum consectetur, distinctio alias suscipit! Ullam, itaque voluptatem assumenda ipsam sapiente rem veniam et id. Exercitationem vitae assumenda ea quibusdam natus nihil nobis dolore ex recusandae aliquid. Pariatur aliquid velit nobis magnam voluptas dicta earum perferendis, esse nihil voluptate sapiente ducimus qui dolore! Eaque, temporibus beatae, maxime soluta quod sapiente ex atque molestias qui vel illo mollitia voluptatum magnam velit!</p>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value + 0.25 + 'px';
+                moon.style.top = value + 1.05 + 'px';
+                mountains_behind.style.top = value + 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
